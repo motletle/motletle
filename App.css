@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url(R.jpg);
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: transparent; /* This can be changed to a specific color if desired */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-image: url(pa.jpg);
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav button {
+  margin: 0 10px;
+}
+
+section {
+  background: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+h2 {
+  color: white;
+}
+h3{
+  color:white;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+form {
+  margin-bottom: 20px;
+}
+
+form input,
+form select {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #0b07fa;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #dddddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #35424a;
+  color: #ffffff;
+}
+
+button {
+  padding: 5px;
+  background-color: #35424a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.error {
+  border: 50px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin: 2px 0;
+}
+
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home img {
+  max-width: 80%;
+  max-height: 60%;
+  margin-top: 0;
+}
+
+.home nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20px 0; /* Adjusted for spacing */
+}
+
+nav ul li {
+  margin: 20px 5px;
+}
+
+.chart-container {
+  background-color: #f8f9fa; /* Light grey background for the container */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.recharts-cartesian-grid line {
+  stroke: #e6e6e6; /* Grid line color */
+}
+
+.recharts-axis tick {
+  fill: #666; /* Axis tick color */
+}
+
+.recharts-tooltip {
+  background-color: #fff; /* Tooltip background color */
+  border: 1px solid #ddd; /* Tooltip border */
+  border-radius: 4px; /* Rounded tooltip corners */
+  padding: 10px; /* Padding inside the tooltip */
+}
+
+.recharts-tooltip-item {
+  color: #333; /* Tooltip text color */
+}
+
+.recharts-bar {
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.recharts-bar:hover {
+  fill: #007bff; /* Change color on hover */
+}
+.moving-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden; /* To hide images going out of bounds */
+  width: 100%; /* Ensure it fits the container */
+}
+
+.moving-images img {
+  border: 1px solid blue;
+  margin-left: 100px;
+  width: 80px;
+  height: 80px;
+  animation: move 8s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes move {
+  0% {
+      transform: translateX(-100);
+  }
+  50% {
+      transform: translateX(100%); /* Move all the way to the right */
+  }
+  100% {
+      transform: translateX(0); /* Reset to start position */
+  }
+}
